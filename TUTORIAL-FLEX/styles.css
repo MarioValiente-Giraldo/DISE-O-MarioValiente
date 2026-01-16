@@ -1,0 +1,143 @@
+/* VARIABLES */
+:root {
+    --main-white-color: white;
+    --main-purple-color: #9e89b8;
+    --dark-color: #333;
+}
+
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    /* Corrección para IE */
+    display: flex;
+    flex-direction: column;
+}
+
+/* 1. CONTENEDOR PRINCIPAL (FULL SCREEN) */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa al menos el 100% de la ventana */
+}
+
+.wrapper > * {
+    padding: 20px;
+}
+
+/* 2. CABECERA */
+.page-header {
+    background: #f4f4f4;
+}
+
+.page-header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header ul {
+    display: flex;
+    list-style: none;
+    order: 1; /* En móviles va al final (debajo) */
+    width: 100%;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.page-header ul li {
+    margin: 0 10px;
+}
+
+.page-header a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.cta-contact {
+    padding: 10px 20px;
+    background: var(--main-purple-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* 3. CONTENIDO PRINCIPAL (EL QUE SE EXPANDE) */
+.page-main {
+    flex-grow: 1; /* Esto empuja el footer hacia abajo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 350px;
+    /* Imagen de fondo */
+    background: var(--main-purple-color) url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/city.jpg') no-repeat center / cover;
+    background-blend-mode: luminosity;
+    color: var(--main-white-color);
+}
+
+.page-main div {
+    max-width: 500px;
+}
+
+/* 4. PIE DE PÁGINA */
+.page-footer {
+    display: flex;
+    flex-direction: column-reverse; /* Texto abajo en móviles */
+    background: #222;
+    color: white;
+    align-items: center;
+}
+
+.page-footer ul {
+    display: flex;
+    list-style: none;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.page-footer ul li {
+    margin: 0 10px;
+}
+
+.page-footer a {
+    color: white;
+}
+
+/* 5. MEDIA QUERIES (RESPONSIVIDAD) */
+
+/* Pantallas medianas (Tablets/Desktop) */
+@media screen and (min-width: 550px) {
+    /* Header */
+    .page-header ul {
+        width: auto;
+        margin-top: 0;
+        order: 0; /* Vuelve a su posición original */
+    }
+
+    .page-header .cta-contact {
+        order: 1; /* El botón va al final en desktop */
+    }
+
+    /* Footer */
+    .page-footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .page-footer ul {
+        margin-bottom: 0;
+    }
+}
+
+/* Pantallas grandes */
+@media screen and (min-width: 768px) {
+    .page-main {
+        padding-left: 90px;
+    }
+}
