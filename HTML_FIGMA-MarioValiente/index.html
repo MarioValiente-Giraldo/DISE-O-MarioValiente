@@ -12,7 +12,7 @@
 
     <header class="main-header">
         <div class="logo-container">
-            <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+            <a href="index.html" class="logo-link">
                 <h1 class="brand-name">LA CHOZA DEL LIBRO</h1>
                 <div class="logo-wrapper">
                     <img src="logo.png" alt="La Choza del Libro" class="header-logo">
@@ -22,11 +22,17 @@
     </header>
 
     <nav class="search-nav">
+        <input type="checkbox" id="menu-check">
+        <label for="menu-check" class="hamburger">
+            <i class="fa fa-bars"></i>
+        </label>
+
         <div class="search-bar">
             <i class="fa fa-search"></i>
             <input type="text" placeholder="Encuentra tu libro aquí...">
             <span class="close-x">×</span>
         </div>
+        
         <div class="nav-links">
             <a href="tienda.html"><i class="fa fa-book"></i> Compra online</a>
             <a href="#"><i class="fa fa-user"></i> Mi Cuenta</a>
@@ -36,7 +42,6 @@
 
     <main class="content-wrapper">
         <div class="main-layout">
-            
             <section class="books-section">
                 <div class="hero-banner">
                     <div class="hero-text"></div>

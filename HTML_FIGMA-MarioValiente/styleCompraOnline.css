@@ -157,3 +157,61 @@
     align-items: center;
     font-size: 0.9rem;
 }
+/* ============================================================
+   APARTADO 2.A: TABLET (601px - 1024px)
+   ============================================================ */
+@media screen and (max-width: 1024px) {
+    .catalog-layout {
+        grid-template-columns: 1fr; /* Se apilan las secciones */
+    }
+
+    .filters-sidebar {
+        order: -1; /* Filtros arriba del catálogo */
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 productos por línea */
+    }
+}
+
+/* ============================================================
+   APARTADO 2.B: MÓVIL (Hasta 600px)
+   ============================================================ */
+@media screen and (max-width: 600px) {
+    /* Visibilidad */
+    .header-logo {
+        display: none; /* Ocultar logotipo para ganar espacio */
+    }
+
+    /* Menú de Hamburguesa (Misma lógica que en Home) */
+    .hamburger-icon {
+        display: block;
+        font-size: 30px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    /* Catálogo: Un único producto por fila */
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Footer horizontal pasa a vertical */
+    .main-footer-horizontal {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}

@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="styleCompraOnline.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body class="shop-page">
 
     <header class="main-header">
         <div class="logo-container">
-            <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+            <a href="index.html" class="logo-link">
                 <h1 class="brand-name">LA CHOZA DEL LIBRO</h1>
                 <div class="logo-wrapper">
                     <img src="logo.png" alt="Logo" class="header-logo">
@@ -23,6 +23,11 @@
     </header>
 
     <nav class="search-nav">
+        <input type="checkbox" id="menu-check">
+        <label for="menu-check" class="hamburger">
+            <i class="fa fa-bars"></i>
+        </label>
+
         <div class="search-bar">
             <i class="fa fa-search"></i>
             <input type="text" placeholder="Encuentra tu libro aquí...">
@@ -36,7 +41,6 @@
     </nav>
 
     <main class="catalog-layout">
-        
         <aside class="filters-sidebar">
             <div class="filter-controls">
                 <div class="price-slider">
@@ -74,89 +78,23 @@
                     <li>Manga juvenil</li>
                 </ul>
             </div>
-
-            <div class="filter-group">
-                <h3 class="filter-title">FORMATO</h3>
-                <ul class="filter-list">
-                    <li>Tapa blanda</li>
-                    <li>Tapa dura</li>
-                    <li>Bolsillo</li>
-                    <li>Otro formato</li>
-                </ul>
-            </div>
-
-            <div class="filter-group">
-                <h3 class="filter-title">EDAD</h3>
-                <ul class="filter-list">
-                    <li>Menores de 18 años</li>
-                    <li>Mayores de 18 años</li>
-                </ul>
-            </div>
         </aside>
 
         <section class="products-container">
             <div class="product-grid">
-                
-                <a href="producto.html" style="text-decoration: none; color: inherit;">
-                    <article class="product-card">
-                        <div class="card-img-wrapper">
-                            <img src="loinfinito.png" alt="Libro">
-                            <div class="offer-star">OFERTA</div>
-                        </div>
-                        <div class="card-row">
-                            <span class="card-tag">Nacidos de la bruma</span>
-                            <span class="card-tag price">30€</span>
-                        </div>
-                        <div class="card-desc">Nueva edición de El Imperio Final...</div>
-                        <button class="btn-add">AÑADIR A LA CESTA</button>
-                    </article>
-                </a>
-                <a href="producto.html" style="text-decoration: none; color: inherit;">
-                    <article class="product-card">
-                        <div class="card-img-wrapper">
-                            <img src="loinfinito.png" alt="Libro">
-                            <div class="offer-star">OFERTA</div>
-                        </div>
-                        <div class="card-row">
-                            <span class="card-tag">Nacidos de la bruma</span>
-                            <span class="card-tag price">30€</span>
-                        </div>
-                        <div class="card-desc">Nueva edición de El Imperio Final...</div>
-                        <button class="btn-add">AÑADIR A LA CESTA</button>
-                    </article>
-                </a>
-                <a href="producto.html" style="text-decoration: none; color: inherit;">
-                    <article class="product-card">
-                        <div class="card-img-wrapper">
-                            <img src="loinfinito.png" alt="Libro">
-                            <div class="offer-star">OFERTA</div>
-                        </div>
-                        <div class="card-row">
-                            <span class="card-tag">Nacidos de la bruma</span>
-                            <span class="card-tag price">30€</span>
-                        </div>
-                        <div class="card-desc">Nueva edición de El Imperio Final...</div>
-                        <button class="btn-add">AÑADIR A LA CESTA</button>
-                    </article>
-                </a>
-                <a href="producto.html" style="text-decoration: none; color: inherit;">
-                    <article class="product-card">
-                        <div class="card-img-wrapper">
-                            <img src="loinfinito.png" alt="Libro">
-                            <div class="offer-star">OFERTA</div>
-                        </div>
-                        <div class="card-row">
-                            <span class="card-tag">Nacidos de la bruma</span>
-                            <span class="card-tag price">30€</span>
-                        </div>
-                        <div class="card-desc">Nueva edición de El Imperio Final...</div>
-                        <button class="btn-add">AÑADIR A LA CESTA</button>
-                    </article>
-                </a>
-
-                
-                   
-            </div>
+                <article class="product-card">
+                    <div class="card-img-wrapper">
+                        <img src="loinfinito.png" alt="Libro">
+                        <div class="offer-star">OFERTA</div>
+                    </div>
+                    <div class="card-row">
+                        <span class="card-tag">Nacidos de la bruma</span>
+                        <span class="card-tag price">30€</span>
+                    </div>
+                    <div class="card-desc">Nueva edición de El Imperio Final...</div>
+                    <button class="btn-add">AÑADIR A LA CESTA</button>
+                </article>
+                </div>
         </section>
     </main>
 
