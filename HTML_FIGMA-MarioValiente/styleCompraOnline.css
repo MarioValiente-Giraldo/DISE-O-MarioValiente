@@ -1,0 +1,159 @@
+/* Layout del Catálogo */
+.catalog-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 20px;
+    padding: 20px 40px;
+    background-color: white;
+}
+
+/* Sidebar de Filtros */
+.filters-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.filter-controls {
+    background-color: #a4c3a1; /* Verde claro */
+    padding: 15px;
+    font-size: 0.8rem;
+    border-top: 15px solid #8e73a3; /* Borde superior morado */
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-title {
+    background-color: #8e73a3;
+    color: black;
+    text-align: center;
+    padding: 8px;
+    margin: 0;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.filter-list {
+    background-color: #a4c3a1;
+    list-style: none;
+    padding: 10px 15px;
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.filter-list li {
+    padding: 3px 0;
+}
+
+.filter-list li::before {
+    content: "• ";
+}
+
+/* Área de Productos */
+.products-container {
+    background-color: #b099c1; /* Fondo morado claro */
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Tarjeta de Producto */
+.product-card {
+    background-color: #422745; /* Nuevo color púrpura solicitado */
+    padding: 25px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave opcional para resaltar */
+}
+
+.card-img-wrapper {
+    position: relative;
+    width: 140px;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.offer-star {
+    position: absolute;
+    top: -20px;
+    right: -40px;
+    background-color: #a4c3a1;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+
+.card-tag {
+    background-color: #a4c3a1;
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    flex: 1;
+}
+
+.card-tag.price {
+    flex: 0.4;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-desc {
+    background-color: #a4c3a1;
+    padding: 10px;
+    font-size: 0.75rem;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 60px;
+}
+/* Botón Añadir a la Cesta */
+.btn-add {
+    background-color: #263824; /* Nuevo color púrpura solicitado */
+    color: white; /* Texto blanco para buen contraste */
+    border: none;
+    padding: 12px 24px; /* Un poco más grande para destacar */
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color al pasar el ratón */
+}
+
+.btn-add:hover {
+    filter: brightness(1.1); /* Aclara ligeramente el botón al pasar el ratón */
+}
+
+/* Footer Horizontal (Imagen 3) */
+.main-footer-horizontal {
+    background-color: #4a6d41;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}

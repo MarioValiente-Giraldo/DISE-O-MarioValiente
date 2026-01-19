@@ -1,0 +1,171 @@
+/* --- RESET Y ESTILOS BASE --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- HEADER PRINCIPAL --- */
+.main-header {
+    background-color: #3b2641; /* Morado oscuro */
+    padding: 10px 40px;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-name {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.header-logo {
+    height: 40px;
+    background-color: white;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+/* --- BARRA DE NAVEGACIÓN Y BÚSQUEDA --- */
+.search-nav {
+    background-color: #8e73a3; /* Morado medio */
+    padding: 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+    background: #a4c3a1; /* Verde claro */
+    border-radius: 20px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    padding: 5px;
+    width: 100%;
+    outline: none;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+/* --- SECCIÓN DETALLE DEL PRODUCTO --- */
+.product-detail-wrapper {
+    background-color: #E6DAE9; /* Fondo lila claro */
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex: 1; /* Empuja el footer hacia abajo */
+}
+
+.product-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr; /* Imagen izquierda, info derecha */
+    gap: 40px;
+    max-width: 1100px;
+    width: 100%;
+    align-items: start;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 15px 15px 30px rgba(0,0,0,0.4); /* Sombra de la imagen */
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-title-box {
+    background-color: #3b2641; /* Fondo oscuro para el título */
+    color: white;
+    padding: 20px;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.product-description-box {
+    background-color: #B28AB7; /* Color solicitado */
+    color: #1a1a1a;
+    padding: 25px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.product-meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.meta-item {
+    background-color: #B28AB7; /* Color solicitado */
+    padding: 15px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.product-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn-cart-green {
+    background-color: #79956d; /* Color del botón actualizado */
+    color: white;
+    border: none;
+    padding: 15px 50px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* --- FOOTER HORIZONTAL (ESTILO IMAGEN) --- */
+.main-footer-horizontal {
+    background-color: #4a6d41; /* Verde oscuro */
+    color: #ffffff;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.social-icons i {
+    cursor: pointer;
+}
+
+.footer-left i {
+    margin-right: 5px;
+}
